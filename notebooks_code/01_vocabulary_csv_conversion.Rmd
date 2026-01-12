@@ -59,29 +59,10 @@ Make a snaphot of all packages
 renv::snapshot()
 ```
 
-# Read the vocabulary data
-
-Directly from the server
 ```{r}
-df_vocabulary_general <- read_excel(path = here("data/raw_results/lanupro_vocabulary_general.xlsx"))
-df_vocabulary_fatty_acids <- read_excel(path = here("data/raw_results/lanupro_vocabulary_fatty_acids.xlsx"))
-df_vocabulary_incubations <- read_excel(path = here("data/raw_results/lanupro_vocabulary_incubations.xlsx"))
+source(here("notebooks_code/02_read_and_save_files.R"))
 ```
 
-
-# Processing
-If needed
-
-
-# Save the vocabulary data to .cvs
-For excel power query and
-For version control
-
-```{r}
-write.csv(df_vocabulary_general, file = here("data/processed/lanupro_vocabulary_general.csv"))
-write.csv(df_vocabulary_fatty_acids, file = here("data/processed/lanupro_vocabulary_fatty_acids.csv"))
-write.csv(df_vocabulary_incubations, file = here("data/processed/lanupro_vocabulary_incubations.csv"))
-```
 
 
 

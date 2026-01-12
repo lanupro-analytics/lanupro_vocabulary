@@ -1,5 +1,5 @@
 ---
-title: "Reading and saving of the vocabulary files"
+title: "Reading and saving of the lanuprovocabulary files"
 date: "`r Sys.Date()`"
 output:
   github_document:

@@ -1,4 +1,4 @@
-name: Run R Markdown on every commit
+name: Run R 02 on every commit
 
 on:
   push:
@@ -23,11 +23,10 @@ jobs:
             libssl-dev \
             libxml2-dev
 
-      # Run without renv
+      # Run without renv (minimal packages only)
       - name: Install minimal packages
-  run: |
-    Rscript -e "install.packages(c('here','readxl','writexl'), repos='https://cloud.r-project.org')"
-
+        run: |
+          Rscript -e "install.packages(c('here','readxl','writexl'), repos='https://cloud.r-project.org')"
 
       - name: Run notebook script
         run: |

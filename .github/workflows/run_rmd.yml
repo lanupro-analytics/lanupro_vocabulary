@@ -23,9 +23,11 @@ jobs:
             libssl-dev \
             libxml2-dev
 
-      # Restores packages from renv.lock (and caches them)
-      - name: Restore renv packages
-        uses: r-lib/actions/setup-renv@v2
+      # Run without renv
+      - name: Install minimal packages
+  run: |
+    Rscript -e "install.packages(c('here','readxl','writexl'), repos='https://cloud.r-project.org')"
+
 
       - name: Run notebook script
         run: |

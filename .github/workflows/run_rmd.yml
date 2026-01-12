@@ -30,4 +30,4 @@ jobs:
 
       - name: Run notebook script
         run: |
-           Rscript -e "source(here::here('notebooks_code/02_vocabulary_csv_conversion.R'))"
+           Rscript notebooks_code/02_vocabulary_csv_conversion.R

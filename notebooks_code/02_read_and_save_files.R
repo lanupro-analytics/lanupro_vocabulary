@@ -1,3 +1,7 @@
+library(readxl)
+library(writexl)
+library(here)
+
 # Read the vocabulary data
 
 # Directly from the server

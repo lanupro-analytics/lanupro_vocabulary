@@ -18,17 +18,15 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+          sudo apt-get install -y \
+            libcurl4-openssl-dev \
+            libssl-dev \
+            libxml2-dev
 
-      - name: Install R packages
+      # Restores packages from renv.lock (and caches them)
+      - name: Restore renv packages
         uses: r-lib/actions/setup-renv@v2
-        with:
-          packages: |
-            rmarkdown
-            knitr
-            tidyverse
 
-      - name: Render R Markdown
+      - name: Run notebook script
         run: |
-          Rscript -e "rmarkdown::render('notebooks_code//01_vocabulary_csv_conversion.Rmd
-.Rmd')"
+          Rscript notebooks_code/02_vocabulary_csv_conversion.R

@@ -1,5 +1,9 @@
 name: Run R 02 on every commit
 
+permissions:
+  contents: write
+
+
 on:
   push:
   pull_request:

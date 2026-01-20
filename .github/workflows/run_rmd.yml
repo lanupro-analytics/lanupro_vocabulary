@@ -3,7 +3,6 @@ name: Run R 02 on every commit
 permissions:
   contents: write
 
-
 on:
   push:
   pull_request:
@@ -27,20 +26,23 @@ jobs:
             libssl-dev \
             libxml2-dev
 
-      # Run without renv (minimal packages only)
       - name: Install minimal packages
         run: |
           Rscript -e "install.packages(c('here','readxl','writexl'), repos='https://cloud.r-project.org')"
 
       - name: Run notebook script
         run: |
-           Rscript notebooks_code/02_read_and_save_files.R
+          Rscript notebooks_code/02_read_and_save_files.R
            
-      - name: Commit updated CSV
+      - name: Commit and push updated CSV
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+          # Sync with remote to prevent push errors
+          git fetch origin master
+          git reset --hard origin/master
+
           git add data/*.csv
           git commit -m "Auto-update CSV from R script" || echo "No changes to commit"
-          git push
+          git push origin master

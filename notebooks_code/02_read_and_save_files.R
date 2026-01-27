@@ -15,7 +15,7 @@ df_vocabulary_incubations <- read_excel(path = here("data/raw_results/lanupro_vo
 # Processing If needed
 
 
-# Save the vocabulary data to .cvs
+# Save the vocabulary data to .csv files
 # For excel power query and for version control
 
 

@@ -27,6 +27,6 @@ df_vocabulary_incubations <- read_excel(path = here("data/raw_results/lanupro_vo
 # For excel power query and for version control
 
 
-write.csv(df_vocabulary_general, "data/processed/lanupro_vocabulary_general.csv", row.names = FALSE)
-write.csv(df_vocabulary_fatty_acids, "data/processed/lanupro_vocabulary_fatty_acids.csv", row.names = FALSE)
-write.csv(df_vocabulary_incubations, "data/processed/lanupro_vocabulary_incubations.csv", row.names = FALSE)
+write.csv(df_vocabulary_general, "data/processed/lanupro_vocabulary_general.csv", row.names = FALSE, sep = ",")
+write.csv(df_vocabulary_fatty_acids, "data/processed/lanupro_vocabulary_fatty_acids.csv", row.names = FALSE, sep = ",")
+write.csv(df_vocabulary_incubations, "data/processed/lanupro_vocabulary_incubations.csv", row.names = FALSE, sep = ",")

@@ -2,9 +2,7 @@
 "deprecated_names","#","sample_ID","none",NA,"none","Sample form","none","none","Protocol","Storage","GC method",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "category","quantitative","qualitative","factor","date","qualitative","factor","quantitative","quantitative","qualitative","qualitative","qualitative",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "type","numeric","string","string","string","string","string","numeric","numeric","string","string","string",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"description","index numbering of the rows","sample_id: <s>_<project acronym and last 2 digits of the year>_<experiment number>_<3 digits sample number>","type of sample","date of sampling format <dd/mm/yyyy>","variable unit
-mmol: millimol
-umol: µmol","in which form the sample is stored before analysis","analytic repetion of the analysis","analytic run of the analysis","lab protocol","storage place of the sample","protocol of gas chromatography",NA,NA,NA,NA,"If exact date not known, 1/1 is put",NA,NA,NA,NA,NA,NA,NA,NA,"starch content (g per kg dry matter)"
+"description","index numbering of the rows","sample_id: <s>_<project acronym and last 2 digits of the year>_<experiment number>_<3 digits sample number>","type of sample","date of sampling format <dd/mm/yyyy>","variable unit","in which form the sample is stored before analysis","analytic repetion of the analysis","analytic run of the analysis","lab protocol","storage place of the sample","protocol of gas chromatography",NA,NA,NA,NA,"If exact date not known, 1/1 is put",NA,NA,NA,NA,NA,NA,NA,NA,"starch content (g per kg dry matter)"
 "default_unit","none","none","none",NA,"none","none","none",NA,"none","none","none",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "level_01",NA,NA,"milk",NA,"none","dry",NA,NA,"cm_methyl_2","unknown_location","long_1_25",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "level_02",NA,NA,"colostrum",NA,"g_per_100_g_fatty_acids","extract",NA,NA,"adf_dry_lignin_1","minus_80c","long_1_30",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

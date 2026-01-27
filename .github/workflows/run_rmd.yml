@@ -5,6 +5,7 @@ permissions:
 
 on:
   push:
+    branches: [main]
   pull_request:
 
 jobs:
@@ -14,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
@@ -26,23 +29,20 @@ jobs:
             libssl-dev \
             libxml2-dev
 
-      - name: Install minimal packages
+      - name: Install R packages
         run: |
           Rscript -e "install.packages(c('here','readxl','writexl'), repos='https://cloud.r-project.org')"
 
       - name: Run notebook script
         run: |
           Rscript notebooks_code/02_read_and_save_files.R
-           
+
       - name: Commit and push updated CSV
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Sync with remote to prevent push errors
-          git fetch origin master
-          git reset --hard origin/master
-
+          git status
           git add data/*.csv
           git commit -m "Auto-update CSV from R script" || echo "No changes to commit"
-          git push origin master
+          git push

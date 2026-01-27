@@ -1,3 +1,11 @@
+# Force project root in GitHub Actions
+if (nzchar(Sys.getenv("GITHUB_WORKSPACE"))) {
+  setwd(Sys.getenv("GITHUB_WORKSPACE"))
+}
+
+getwd() |> message()
+
+
 library(readxl)
 library(writexl)
 library(here)
@@ -19,6 +27,6 @@ df_vocabulary_incubations <- read_excel(path = here("data/raw_results/lanupro_vo
 # For excel power query and for version control
 
 
-write.csv(df_vocabulary_general, file = here("data/processed/lanupro_vocabulary_general.csv"), row.names = FALSE)
-write.csv(df_vocabulary_fatty_acids, file = here("data/processed/lanupro_vocabulary_fatty_acids.csv"), row.names = FALSE)
-write.csv(df_vocabulary_incubations, file = here("data/processed/lanupro_vocabulary_incubations.csv"), row.names = FALSE)
+write.csv(df_vocabulary_general, "data/processed/lanupro_vocabulary_general.csv", row.names = FALSE)
+write.csv(df_vocabulary_fatty_acids, "data/processed/lanupro_vocabulary_fatty_acids.csv", row.names = FALSE)
+write.csv(df_vocabulary_incubations, "data/processed/lanupro_vocabulary_incubations.csv", row.names = FALSE)

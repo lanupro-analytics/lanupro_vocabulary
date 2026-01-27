@@ -2,13 +2,15 @@
 "deprecated_names","#","sample_ID","none",NA,"none","Sample form","none","none","Protocol","Storage","GC method",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "category","quantitative","qualitative","factor","date","qualitative","factor","quantitative","quantitative","qualitative","qualitative","qualitative",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "type","numeric","string","string","string","string","string","numeric","numeric","string","string","string",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"description","index numbering of the rows","sample_id: <s>_<project acronym and last 2 digits of the year>_<experiment number>_<3 digits sample number>","type of sample","date of sampling format <dd/mm/yyyy>","variable unit","in which form the sample is stored before analysis","analytic repetion of the analysis","analytic run of the analysis","lab protocol","storage place of the sample","protocol of gas chromatography",NA,NA,NA,NA,"If exact date not known, 1/1 is put",NA,NA,NA,NA,NA,NA,NA,NA,"starch content (g per kg dry matter)"
+"description","index numbering of the rows","sample_id: <s>_<project acronym and last 2 digits of the year>_<experiment number>_<3 digits sample number>","type of sample","date of sampling format <dd/mm/yyyy>","variable unit
+mmol: millimol
+umol: µmol","in which form the sample is stored before analysis","analytic repetion of the analysis","analytic run of the analysis","lab protocol","storage place of the sample","protocol of gas chromatography",NA,NA,NA,NA,"If exact date not known, 1/1 is put",NA,NA,NA,NA,NA,NA,NA,NA,"starch content (g per kg dry matter)"
 "default_unit","none","none","none",NA,"none","none","none",NA,"none","none","none",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "level_01",NA,NA,"milk",NA,"none","dry",NA,NA,"cm_methyl_2","unknown_location","long_1_25",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "level_02",NA,NA,"colostrum",NA,"g_per_100_g_fatty_acids","extract",NA,NA,"adf_dry_lignin_1","minus_80c","long_1_30",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "level_03",NA,NA,"blood_whole",NA,"mmol_per_l_serum","fresh",NA,NA,"apple_ppo_3","fridge_incub_lab","long_1_50",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "level_04",NA,NA,"blood_serum",NA,"umol_per_l_serum","frozen",NA,NA,"cm_sep_spe_2","freezer_incub_lab","short_05_100",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"level_05",NA,NA,"blood_plasma",NA,"test_unit","lyo",NA,NA,"cm_sep_tlc_1","fridge_chem_lab","short_05_50",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"level_05",NA,NA,"blood_plasma",NA,NA,"lyo",NA,NA,"cm_sep_tlc_1","fridge_chem_lab","short_05_50",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "level_06",NA,NA,"meat_minced",NA,NA,"autoclaved",NA,NA,"fat_methyl_1","freezer_chem_lab","short_07_75",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "level_07",NA,NA,"meat_steak",NA,NA,NA,NA,NA,"feed_dry_adf_1","fridge_basement","short_1_100",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "level_08",NA,NA,"faeces",NA,NA,NA,NA,NA,"feed_dry_crudefiber_1","freezer_basement","short_1_25",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

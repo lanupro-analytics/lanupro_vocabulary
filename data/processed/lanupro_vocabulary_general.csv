@@ -1,4 +1,4 @@
-"lanupro_ontology","index","sample_id","sample_type","sample_date","unit","sample_form","repetition","run","protocol","storage","gc_method","info","batch","cas_nr","company","arrival_date","ref_nr","drymatter_g_kg","ash_g_kgdm","crude_fibre_g_kgdm","crude_protein_g_kgdm","crude_fat_g_kgdm","adf_g_kgdm","ndf_g_kgdm","starch_g_kgdm"
+"...1","index","sample_id","sample_type","sample_date","unit","sample_form","repetition","run","protocol","storage","gc_method","info","batch","cas_nr","company","arrival_date","ref_nr","drymatter_g_kg","ash_g_kgdm","crude_fibre_g_kgdm","crude_protein_g_kgdm","crude_fat_g_kgdm","adf_g_kgdm","ndf_g_kgdm","starch_g_kgdm"
 "deprecated_names","#","sample_ID","none",NA,"none","Sample form","none","none","Protocol","Storage","GC method",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "category","quantitative","qualitative","factor","date","qualitative","factor","quantitative","quantitative","qualitative","qualitative","qualitative",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "type","numeric","string","string","string","string","string","numeric","numeric","string","string","string",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

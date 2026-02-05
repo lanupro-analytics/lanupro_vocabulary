@@ -44,5 +44,6 @@ jobs:
 
           git status
           git add data/*.csv
+          git add data/*.tsv
           git commit -m "Auto-update CSV from R script" || echo "No changes to commit"
           git push

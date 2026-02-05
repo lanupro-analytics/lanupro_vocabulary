@@ -26,19 +26,26 @@ df_vocabulary_incubations <- read_excel(path = here("data/raw_results/lanupro_vo
 # Save the vocabulary data to .tsv files
 # For excel power query and for version control
 
-
-write_tsv(
+write.table(
   df_vocabulary_general,
-  "data/processed/lanupro_vocabulary_general.tsv"
+  "data/processed/lanupro_vocabulary_general.tsv",
+  sep = "\t",
+  row.names = FALSE,
+  quote = FALSE
 )
 
-write_tsv(
+write.table(
   df_vocabulary_fatty_acids,
-  "data/processed/lanupro_vocabulary_fatty_acids.tsv"
+  "data/processed/lanupro_vocabulary_fatty_acids.tsv",
+  sep = "\t",
+  row.names = FALSE,
+  quote = FALSE
 )
 
-write_tsv(
+write.table(
   df_vocabulary_incubations,
-  "data/processed/lanupro_vocabulary_incubations.tsv"
+  "data/processed/lanupro_vocabulary_incubations.tsv",
+  sep = "\t",
+  row.names = FALSE,
+  quote = FALSE
 )
-

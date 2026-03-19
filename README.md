@@ -17,10 +17,10 @@ The naming conventions are integrated in the lanupro lab templates. Just use the
 1.  Choose the right vocabulary file depending on your analysis and download the excel file from github:
 
 | Download | Preview |
-|----|----|
-| [lanupro_vocabulary_general](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_general.xlsx) | [lanupro_vocabulary_general](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_general.csv) |
-| [lanupro_vocabulary_fatty_acids](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_fatty_acids.xlsx) | [lanupro_vocabulary_fatty_acids](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_fatty_acids.csv) |
-| [lanupro_vocabulary_incubations](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_incubations.xlsx) | [lanupro_vocabulary_incubations](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_incubations.csv) |
+|------------------------------------|------------------------------------|
+| [lanupro_vocabulary_general](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_general.xlsx) | [lanupro_vocabulary_general](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_general.tsv) |
+| [lanupro_vocabulary_fatty_acids](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_fatty_acids.xlsx) | [lanupro_vocabulary_fatty_acids](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_fatty_acids.tsv) |
+| [lanupro_vocabulary_incubations](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_incubations.xlsx) | [lanupro_vocabulary_incubations](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_incubations.tsv) |
 
 2.  Edit locally: add your new names
 

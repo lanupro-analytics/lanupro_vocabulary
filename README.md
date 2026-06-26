@@ -10,6 +10,11 @@ Excel masterfile lab templates are linked via Power Query for streamlined integr
 
 The naming conventions are integrated in the lanupro lab templates. Just use the lab templates for your data.
 
+Current lab templates available:
+
+-   **Rumen incubations** \
+    [S:\\shares\\lanupro\\Rumen\\1_Methods\\Masterfile\\masterfile_incubations_template.xltx]("S:\shares\lanupro\Rumen\1_Methods\Masterfile\masterfile_incubations_template.xltx")
+
 ### Changing the naming conventions
 
 *If a name is not present in the Lanupro lab template, you have to update the lanupro_vocabulary*

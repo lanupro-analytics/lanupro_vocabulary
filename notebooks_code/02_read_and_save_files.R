@@ -9,6 +9,8 @@ getwd() |> message()
 library(readxl)
 library(writexl)
 library(here)
+library(readr)
+library(dplyr)
 
 # Read the vocabulary data
 
@@ -22,30 +24,23 @@ df_vocabulary_incubations <- read_excel(path = here("data/raw_results/lanupro_vo
 
 # Processing If needed
 
+# Drop columns that are entirely empty (all NA, or all blank strings)
+# so no empty columns get saved to the processed data
+drop_empty_columns <- function(df) {
+  is_empty_col <- function(col) {
+    all(is.na(col) | (is.character(col) & trimws(col) == ""))
+  }
+  df |> select(where(~ !is_empty_col(.x)))
+}
+
+df_vocabulary_general <- drop_empty_columns(df_vocabulary_general)
+df_vocabulary_fatty_acids <- drop_empty_columns(df_vocabulary_fatty_acids)
+df_vocabulary_incubations <- drop_empty_columns(df_vocabulary_incubations)
+
 
 # Save the vocabulary data to .tsv files
 # For excel power query and for version control
 
-write.table(
-  df_vocabulary_general,
-  "data/processed/lanupro_vocabulary_general.tsv",
-  sep = "\t",
-  row.names = FALSE,
-  quote = FALSE
-)
-
-write.table(
-  df_vocabulary_fatty_acids,
-  "data/processed/lanupro_vocabulary_fatty_acids.tsv",
-  sep = "\t",
-  row.names = FALSE,
-  quote = FALSE
-)
-
-write.table(
-  df_vocabulary_incubations,
-  "data/processed/lanupro_vocabulary_incubations.tsv",
-  sep = "\t",
-  row.names = FALSE,
-  quote = FALSE
-)
+write_tsv(df_vocabulary_general, "data/processed/lanupro_vocabulary_general.tsv")
+write_tsv(df_vocabulary_fatty_acids, "data/processed/lanupro_vocabulary_fatty_acids.tsv")
+write_tsv(df_vocabulary_incubations, "data/processed/lanupro_vocabulary_incubations.tsv")

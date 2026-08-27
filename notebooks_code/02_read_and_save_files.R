@@ -33,9 +33,9 @@ drop_empty_columns <- function(df) {
   df |> select(where(~ !is_empty_col(.x)))
 }
 
-df_vocabulary_general <- drop_empty_columns(df_vocabulary_general)
-df_vocabulary_fatty_acids <- drop_empty_columns(df_vocabulary_fatty_acids)
-df_vocabulary_incubations <- drop_empty_columns(df_vocabulary_incubations)
+#df_vocabulary_general <- drop_empty_columns(df_vocabulary_general)
+#df_vocabulary_fatty_acids <- drop_empty_columns(df_vocabulary_fatty_acids)
+#df_vocabulary_incubations <- drop_empty_columns(df_vocabulary_incubations)
 
 
 # Save the vocabulary data to .tsv files

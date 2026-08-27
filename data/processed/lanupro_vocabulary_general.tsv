@@ -4,7 +4,7 @@ category	quantitative	qualitative	factor	date	qualitative	factor	NA	NA	quantitat
 type	numeric	string	string	string	string	string	NA	NA	numeric	numeric	string	string	string	string	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 description	index numbering of the rows	sample_id: <s>_<project acronym and last 2 digits of the year>_<experiment number>_<3 digits sample number>	type of sample	date of sampling format <dd/mm/yyyy>	variable unit	in which form the sample is stored before analysis	NA	NA	analytic repetion of the analysis	analytic run of the analysis	lab protocol	storage place of the sample	protocol of gas chromatography	general non-structured information	NA	NA	NA	If the exact date not known 1/1 is put	NA	NA	NA	NA	NA	NA	NA	NA	starch content (g per kg dry matter)	test_field
 default_unit	none	none	none	NA	none	none	NA	NA	none	NA	none	none	none	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_01	NA	NA	milk	NA	none	dry	NA	NA	NA	NA	cm_methyl_2	unknown_location	long_1_25	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+level_01	none	none	milk	none	none	dry	none	none	none	none	cm_methyl_2	unknown_location	long_1_25	none	none	none	none	none	none	none	none	none	none	none	none	none	none	none
 level_02	NA	NA	colostrum	NA	g_per_100_g_fatty_acids	extract	NA	NA	NA	NA	adf_dry_lignin_1	minus_80c	long_1_30	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 level_03	NA	NA	blood_whole	NA	mmol_per_l_serum	fresh	NA	NA	NA	NA	apple_ppo_3	fridge_incub_lab	long_1_50	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 level_04	NA	NA	blood_serum	NA	umol_per_l_serum	frozen	NA	NA	NA	NA	cm_sep_spe_2	freezer_incub_lab	short_05_100	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA

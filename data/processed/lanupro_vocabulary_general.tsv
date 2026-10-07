@@ -1,105 +1,106 @@
-lanupro_ontology	index	sample_id	sample_type	sample_date	unit	sample_form	sample_location	sample_information	protocol	storage	gc_method	info	batch	cas_nr	company	arrival_date	ref_nr	drymatter_g_kg	ash_g_kgdm	crude_fibre_g_kgdm	crude_protein_g_kgdm	crude_fat_g_kgdm	adf_g_kgdm	ndf_g_kgdm	starch_g_kgdm	test_variable
-type	numeric	identifier	factor	date	factor	factor	factor	string	factor	factor	factor	string	string	string	string	date	string	numeric	numeric	numeric	numeric	numeric	numeric	numeric	numeric	factor
-deprecated_names	#	sample_ID	none	Sample Date	none	Sample form	none	none	Protocol	Storage	GC method	none	none	none	none	none	none	none	none	none	none	none	none	NDF_g_kgdm	none	NA
-description	index numbering of the rows	sample_id: <s>_<project acronym and last 2 digits of the year>_<experiment number>_<3 digits sample number>	type of sample	date of sampling format <dd/mm/yyyy>	variable unit	in which form the sample is stored before analysis	NA	NA	lab protocol	storage place of the sample	protocol of gas chromatography	general non-structured information	NA	NA	NA	If the exact date not known 1/1 is put	NA	NA	NA	NA	NA	NA	NA	NA	starch content (g per kg dry matter)	NA
-default_unit	none	none	none	NA	none	none	NA	NA	none	none	none	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_01	none	none	milk	none	none	dry	none	none	cm_methyl_2	unknown_location	long_1_25	none	none	none	none	none	none	none	none	none	none	none	none	none	none	test_level
-level_02	NA	NA	colostrum	NA	g_per_100_g_fatty_acids	extract	NA	NA	adf_dry_lignin_1	minus_80c	long_1_30	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_03	NA	NA	blood_whole	NA	mmol_per_l_serum	fresh	NA	NA	apple_ppo_3	fridge_incub_lab	long_1_50	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_04	NA	NA	blood_serum	NA	umol_per_l_serum	frozen	NA	NA	cm_sep_spe_2	freezer_incub_lab	short_05_100	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_05	NA	NA	blood_plasma	NA	NA	lyo	NA	NA	cm_sep_tlc_1	fridge_chem_lab	short_05_50	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_06	NA	NA	meat_minced	NA	NA	autoclaved	NA	NA	fat_methyl_1	freezer_chem_lab	short_07_75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_07	NA	NA	meat_steak	NA	NA	NA	NA	NA	feed_dry_adf_1	fridge_basement	short_1_100	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_08	NA	NA	faeces	NA	NA	NA	NA	NA	feed_dry_crudefiber_1	freezer_basement	short_1_25	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_09	NA	NA	rumen_fluid	NA	NA	NA	NA	NA	feed_dry_extract_1	rt_incub_lab	short_1_50	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_10	NA	NA	apple	NA	NA	NA	NA	NA	feed_dry_fat_1	rt_chem_lab	short_2_25	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_11	NA	NA	bacteria	NA	NA	NA	NA	NA	feed_dry_n_1	not_stored	vfa_dmso	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_12	NA	NA	blood	NA	NA	NA	NA	NA	feed_dry_ndf_1	NA	vfa_glycerol	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_13	NA	NA	duodenum	NA	NA	NA	NA	NA	feed_fresh_dm_and_ash_1	NA	vfa_oct22	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_14	NA	NA	emulsion	NA	NA	NA	NA	NA	feed_fresh_extract_1	NA	vfa_sept12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_15	NA	NA	forage	NA	NA	NA	NA	NA	feed_laca_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_16	NA	NA	in_vitro_abomasum_small_intestine	NA	NA	NA	NA	NA	feed_lyo_dt_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_17	NA	NA	in_vitro_rumen	NA	NA	NA	NA	NA	feed_vfa_and_eba_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_18	NA	NA	oil	NA	NA	NA	NA	NA	feed_vfa_minus_eba_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_19	NA	NA	omasal	NA	NA	NA	NA	NA	milk_fresh_extract_2	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_20	NA	NA	products	NA	NA	NA	NA	NA	milk_fresh_extract_3	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_21	NA	NA	rumen	NA	NA	NA	NA	NA	milk_fresh_extract_4	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_22	NA	NA	sab	NA	NA	NA	NA	NA	milk_lyo_extract_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_23	NA	NA	soil	NA	NA	NA	NA	NA	milk_methyl_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_24	NA	NA	soluble_crude_protein	NA	NA	NA	NA	NA	milk_methyl_2	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_25	NA	NA	standard	NA	NA	NA	NA	NA	oil_tba_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_26	NA	NA	water	NA	NA	NA	NA	NA	plasma_fresh_dt_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_27	NA	NA	brewers_grain	NA	NA	NA	NA	NA	plasma_fresh_extract_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_28	NA	NA	maize_meal	NA	NA	NA	NA	NA	plasma_sep_spe_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_29	NA	NA	seafeed	NA	NA	NA	NA	NA	protein_extract_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_30	NA	NA	NA	NA	NA	NA	NA	NA	rumen_fresh_extract_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_31	NA	NA	NA	NA	NA	NA	NA	NA	rumen_fresh_extract_2	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_32	NA	NA	NA	NA	NA	NA	NA	NA	rumen_fresh_extract_3	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_33	NA	NA	NA	NA	NA	NA	NA	NA	rumen_lyo_dt_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_34	NA	NA	NA	NA	NA	NA	NA	NA	rumen_lyo_dt_2	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_35	NA	NA	NA	NA	NA	NA	NA	NA	rumen_nh3_n_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_36	NA	NA	NA	NA	NA	NA	NA	NA	rumen_vfa_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_37	NA	NA	NA	NA	NA	NA	NA	NA	urine_allantoin_1	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_38	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_39	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_40	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_41	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_42	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_43	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_44	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_45	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_46	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_47	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_48	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_49	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_50	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_51	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_52	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_53	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_54	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_55	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_56	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_57	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_58	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_59	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_60	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_61	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_62	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_63	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_64	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_65	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_66	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_67	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_68	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_69	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_70	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_71	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_72	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_73	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_74	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_76	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_77	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_79	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_80	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_81	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_83	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_84	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_85	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_86	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_87	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_88	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_89	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_90	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_91	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_92	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_93	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_94	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_95	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_96	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_97	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_98	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_99	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-level_100	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+lanupro_ontology	index	sample_id	sample_type	sample_date	unit	sample_form	sample_location	sample_information	origin	available_from	info_file	protocol	storage	gc_method	info	batch	cas_nr	company	arrival_date	ref_nr	drymatter_g_per_kg	ash_g_per_kg_dm	crude_fibre_g_per_kg_dm	crude_protein_g_per_kg_dm	crude_fat_g_per_kg_dm	adf_g_per_kg_dm	ndf_g_per_kg_dm	starch_g_per_kg_dm	sugar_g_per_kg_dm	test_variable
+type	numeric	identifier	factor	date	factor	factor	factor	string	string	string	string	factor	factor	factor	string	string	string	string	date	string	numeric	numeric	numeric	numeric	numeric	numeric	numeric	numeric	numeric	factor
+deprecated_names	#	sample_ID	none	Sample Date	none	Sample form, sample form	none	none	none	available from	Link info substrates	Protocol	Storage	GC method	none	none	none	none	none	none	drymatter_g_kg, dm_g_per_kg, DM proposition %	ash_g_kgdm	crude_fibre_g_kgdm	crude_protein_g_kgdm, cp_g_per_kg_dm, CP (g/kg DM)	crude_fat_g_kgdm, cfa_g_per_kg_dm, CFa (g/kg DM)	adf_g_kgdm	NDF_g_kgdm, ndf_g_kgdm, NDF (g/kg DM)	starch_g_kgdm, Sta (g/kg DM)	Sug (g/kg DM)	none
+description	index numbering of the rows	sample_id: <s>_<project acronym and last 2 digits of the year>_<experiment number>_<3 digits sample number>	type of sample	date of sampling format <dd/mm/yyyy>	variable unit	in which form the sample is stored before analysis	NA	NA	origin (supplier or location) of the sample	year (or date) from which the sample is available	name of the file with additional information on the sample	lab protocol	storage place of the sample	protocol of gas chromatography	general non-structured information	batch number of the product	CAS registry number of the compound	company that supplied the product	If the exact date not known 1/1 is put	reference (article) number of the product at the supplier	dry matter content (g per kg fresh matter)	ash content (g per kg dry matter)	crude fibre content (g per kg dry matter)	crude protein content (g per kg dry matter)	crude fat content (g per kg dry matter)	acid detergent fibre (ADF) content (g per kg dry matter)	neutral detergent fibre (NDF) content (g per kg dry matter)	starch content (g per kg dry matter)	sugar content (g per kg dry matter)	NA
+default_unit	none	none	none	none	none	none	none	none	none	none	none	none	none	none	none	none	none	none	none	none	g_per_kg	g_per_kg_dm	g_per_kg_dm	g_per_kg_dm	g_per_kg_dm	g_per_kg_dm	g_per_kg_dm	g_per_kg_dm	g_per_kg_dm	none
+fixed_levels	-	-	yes	-	yes	yes	no	-	-	-	-	yes	yes	yes	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	no
+level_01	-	-	milk	-	none	dry	-	-	-	-	-	cm_methyl_2	unknown_location	long_1_25	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	test_level
+level_02	-	-	colostrum	-	g_per_100_g_fatty_acids	extract	-	-	-	-	-	adf_dry_lignin_1	minus_80c	long_1_30	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_03	-	-	blood_whole	-	mmol_per_l_serum	fresh	-	-	-	-	-	apple_ppo_3	fridge_incub_lab	long_1_50	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_04	-	-	blood_serum	-	umol_per_l_serum	frozen	-	-	-	-	-	cm_sep_spe_2	freezer_incub_lab	short_05_100	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_05	-	-	blood_plasma	-	-	lyo	-	-	-	-	-	cm_sep_tlc_1	fridge_chem_lab	short_05_50	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_06	-	-	meat_minced	-	-	autoclaved	-	-	-	-	-	fat_methyl_1	freezer_chem_lab	short_07_75	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_07	-	-	meat_steak	-	-	-	-	-	-	-	-	feed_dry_adf_1	fridge_basement	short_1_100	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_08	-	-	faeces	-	-	-	-	-	-	-	-	feed_dry_crudefiber_1	freezer_basement	short_1_25	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_09	-	-	rumen_fluid	-	-	-	-	-	-	-	-	feed_dry_extract_1	rt_incub_lab	short_1_50	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_10	-	-	apple	-	-	-	-	-	-	-	-	feed_dry_fat_1	rt_chem_lab	short_2_25	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_11	-	-	bacteria	-	-	-	-	-	-	-	-	feed_dry_n_1	not_stored	vfa_dmso	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_12	-	-	blood	-	-	-	-	-	-	-	-	feed_dry_ndf_1	-	vfa_glycerol	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_13	-	-	duodenum	-	-	-	-	-	-	-	-	feed_fresh_dm_and_ash_1	-	vfa_oct22	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_14	-	-	emulsion	-	-	-	-	-	-	-	-	feed_fresh_extract_1	-	vfa_sept12	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_15	-	-	forage	-	-	-	-	-	-	-	-	feed_laca_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_16	-	-	in_vitro_abomasum_small_intestine	-	-	-	-	-	-	-	-	feed_lyo_dt_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_17	-	-	in_vitro_rumen	-	-	-	-	-	-	-	-	feed_vfa_and_eba_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_18	-	-	oil	-	-	-	-	-	-	-	-	feed_vfa_minus_eba_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_19	-	-	omasal	-	-	-	-	-	-	-	-	milk_fresh_extract_2	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_20	-	-	products	-	-	-	-	-	-	-	-	milk_fresh_extract_3	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_21	-	-	rumen	-	-	-	-	-	-	-	-	milk_fresh_extract_4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_22	-	-	sab	-	-	-	-	-	-	-	-	milk_lyo_extract_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_23	-	-	soil	-	-	-	-	-	-	-	-	milk_methyl_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_24	-	-	soluble_crude_protein	-	-	-	-	-	-	-	-	milk_methyl_2	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_25	-	-	standard	-	-	-	-	-	-	-	-	oil_tba_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_26	-	-	water	-	-	-	-	-	-	-	-	plasma_fresh_dt_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_27	-	-	brewers_grain	-	-	-	-	-	-	-	-	plasma_fresh_extract_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_28	-	-	maize_meal	-	-	-	-	-	-	-	-	plasma_sep_spe_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_29	-	-	seafeed	-	-	-	-	-	-	-	-	protein_extract_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_30	-	-	grass_silage	-	-	-	-	-	-	-	-	rumen_fresh_extract_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_31	-	-	maize_silage	-	-	-	-	-	-	-	-	rumen_fresh_extract_2	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_32	-	-	straw	-	-	-	-	-	-	-	-	rumen_fresh_extract_3	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_33	-	-	soybean_meal	-	-	-	-	-	-	-	-	rumen_lyo_dt_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_34	-	-	concentrate	-	-	-	-	-	-	-	-	rumen_lyo_dt_2	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_35	-	-	concentrate_mixture	-	-	-	-	-	-	-	-	rumen_nh3_n_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_36	-	-	-	-	-	-	-	-	-	-	-	rumen_vfa_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_37	-	-	-	-	-	-	-	-	-	-	-	urine_allantoin_1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_38	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_39	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_40	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_41	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_42	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_43	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_44	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_45	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_46	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_47	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_48	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_49	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_50	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_51	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_52	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_53	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_54	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_55	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_56	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_57	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_58	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_59	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_60	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_61	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_62	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_63	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_64	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_65	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_66	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_67	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_68	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_69	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_70	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_71	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_72	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_73	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_74	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_75	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_76	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_77	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_78	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_79	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_80	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_81	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_82	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_83	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_84	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_85	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_86	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_87	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_88	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_89	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_90	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_91	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_92	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_93	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_94	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_95	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_96	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_97	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_98	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_99	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+level_100	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-

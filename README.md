@@ -4,6 +4,17 @@ Welcome to the **lanupro vocabulary** repository! This project hosts lanupro nam
 
 Excel masterfile lab templates are linked via Power Query for streamlined integration of the existing naming conventions.
 
+The vocabulary files do have the following rows:
+- lanupro_ontology: variable name to be used within lanupro
+- type: identifier, string, numeric, factor
+- deprecated_names: any old names which are not used anymore, but can be used for mapping of historical data
+- description: explanation on the variable
+- default_unit: does the variable have any default unit (if there can be any confusion on units, the unit is included in the variable name
+- fixed_levels: yes/no. In case of fixed levels you need to add your levels to the vocabulary when not present. If not this means that a user can use custom project factor levels which do not need to be present in the ontology (e.g. you have a treatment label "high_starch").
+
+Note although you will see the dropdown menu below all variable names of the masterfile templates, the dropdown is only relevant and active when it concerns a factor with fixed levels.
+
+
 ## Getting Started
 
 ### Using the naming conventions

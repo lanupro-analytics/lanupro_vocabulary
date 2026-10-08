@@ -1,70 +1,84 @@
 # lanupro-vocabulary
 
-Welcome to the **lanupro vocabulary** repository! This project hosts lanupro naming conventions used in lab data templates.
+Naming conventions for lab data templates within the **lanupro** project.
 
-Excel masterfile lab templates are linked via Power Query for streamlined integration of the existing naming conventions.
+Excel masterfile lab templates are linked via Power Query, so the latest naming conventions can be imported directly into your lab files.
 
-The vocabulary files do have the following rows:
-- lanupro_ontology: variable name to be used within lanupro
-- type: identifier, string, numeric, factor
-- deprecated_names: any old names which are not used anymore, but can be used for mapping of historical data
-- description: explanation on the variable
-- default_unit: does the variable have any default unit (if there can be any confusion on units, the unit is included in the variable name
-- fixed_levels: yes/no. In case of fixed levels you need to add your levels to the vocabulary when not present. If not this means that a user can use custom project factor levels which do not need to be present in the ontology (e.g. you have a treatment label "high_starch").
+## Table of contents
 
-Note although you will see the dropdown menu below all variable names of the masterfile templates, the dropdown is only relevant and active when it concerns a factor with fixed levels.
+- [Vocabulary files](#vocabulary-files)
+- [Getting started](#getting-started)
+  - [Using the naming conventions](#using-the-naming-conventions)
+  - [Changing the naming conventions](#changing-the-naming-conventions)
+- [Contributing to the code](#contributing-to-the-code)
 
+## Vocabulary files
 
-## Getting Started
+Each vocabulary file contains the following columns:
+
+| Column | Description |
+|---|---|
+| `lanupro_ontology` | Variable name to be used within lanupro |
+| `type` | One of: `identifier`, `string`, `numeric`, `factor` |
+| `deprecated_names` | Old names that are no longer used, but can be used to map historical data |
+| `description` | Explanation of the variable |
+| `default_unit` | Default unit of the variable, if any. If there can be any confusion about units, the unit is included in the variable name |
+| `fixed_levels` | `yes`/`no`. With fixed levels, you must add any missing level to the vocabulary. Without fixed levels, users can use custom project factor levels that do not need to be present in the ontology (e.g. a treatment label `high_starch`) |
+
+> [!NOTE]
+> The masterfile templates show a dropdown menu below all variable names, but the dropdown is only relevant and active for factors with fixed levels.
+
+## Getting started
 
 ### Using the naming conventions
 
 The naming conventions are integrated in the lanupro lab templates. Just use the lab templates for your data.
 
-Current lab templates available:
-
--   **Rumen incubations** \
-    [S:\\shares\\lanupro\\Rumen\\1_Methods\\Masterfile\\masterfile_incubations_template.xltx]("S:\shares\lanupro\Rumen\1_Methods\Masterfile\masterfile_incubations_template.xltx")
+| Lab template | Location |
+|---|---|
+| Rumen incubations | `S:\shares\lanupro\Rumen\1_Methods\Masterfile\masterfile_incubations_template.xltx` |
 
 ### Changing the naming conventions
 
-*If a name is not present in the Lanupro lab template, you have to update the lanupro_vocabulary*
+> [!IMPORTANT]
+> If a name is not present in the lanupro lab template, you have to update the lanupro vocabulary.
 
-1.  Choose the right vocabulary file depending on your analysis and download the excel file from github:
+1. **Download** the vocabulary file that matches your analysis:
 
-| Download | Preview |
-|------------------------------------|------------------------------------|
-| [lanupro_vocabulary_general](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_general.xlsx) | [lanupro_vocabulary_general](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_general.tsv) |
-| [lanupro_vocabulary_fatty_acids](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_fatty_acids.xlsx) | [lanupro_vocabulary_fatty_acids](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_fatty_acids.tsv) |
-| [lanupro_vocabulary_incubations](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_incubations.xlsx) | [lanupro_vocabulary_incubations](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_incubations.tsv) |
+   | Vocabulary | Download (Excel) | Preview (TSV) |
+   |---|---|---|
+   | General | [lanupro_vocabulary_general](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_general.xlsx) | [preview](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_general.tsv) |
+   | Fatty acids | [lanupro_vocabulary_fatty_acids](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_fatty_acids.xlsx) | [preview](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_fatty_acids.tsv) |
+   | Incubations | [lanupro_vocabulary_incubations](https://github.com/lanupro-analytics/lanupro_vocabulary/raw/refs/heads/master/data/raw_results/lanupro_vocabulary_incubations.xlsx) | [preview](https://github.com/lanupro-analytics/lanupro_vocabulary/blob/master/data/processed/lanupro_vocabulary_incubations.tsv) |
 
-2.  Edit locally: add your new names
+2. **Edit locally**: add your new names.
 
-3.  Upload the file on:\
-    <https://github.com/lanupro-analytics/lanupro_vocabulary/upload/master/data/raw_results>
+3. **Upload** the file at <https://github.com/lanupro-analytics/lanupro_vocabulary/upload/master/data/raw_results>. Drag or choose the file, add an optional message and press **Commit**.
 
-    Drag of choose the file, add an optional message and press "Commit"
+   ![Upload the vocabulary file](docs/upload.png)
 
-    ![](docs/upload.png)
+4. **Refresh** the Power Query in your lab file to import the latest naming conventions. Ready for use!
 
-4.  Refresh the power query of your lab file to import the latest naming conventions: ready for use!
+   ![Refresh the Power Query](docs/refresh_query.png)
 
-    ![](docs/refresh_query.png)
+> [!TIP]
+> Upload the file under its original name, so it replaces the existing vocabulary file and the Power Query keeps working.
 
-### Contribute to the coding
+## Contributing to the code
 
-Only required when you want to actively contribute to the coding, not for the names in excel format
+> [!NOTE]
+> Only required if you want to actively contribute to the code, not if you only want to update names in the Excel files.
 
--   R (version 4.0 or higher recommended)\
--   RStudio\
--   Git\
--   Access to the `lanupro` GitHub organization\
--   Power Query-compatible software (e.g., Microsoft Excel)
+### Requirements
 
-How to contribute:
+- R (version 4.0 or higher recommended)
+- RStudio
+- Git
+- Access to the `lanupro` GitHub organization
+- Power Query-compatible software (e.g. Microsoft Excel)
 
-1.  Fork the repo
+### Workflow
 
-2.  Make a branch (e.g. feature/my-fix)
-
-3.  Open a Pull Request back to themain branch
+1. Fork the repository.
+2. Create a branch (e.g. `feature/my-fix`).
+3. Open a Pull Request back to the `master` branch.

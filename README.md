@@ -57,7 +57,14 @@ The naming conventions are integrated in the lanupro lab templates. Just use the
 
    ![Upload the vocabulary file](docs/upload.png)
 
-4. **Refresh** the Power Query in your lab file to import the latest naming conventions. Ready for use!
+4. **Check** that the upload was processed correctly. After the commit, an automated action runs, which usually takes a few minutes to finish.
+   - Open the **Actions** tab of the repository and wait until the latest run shows a green check mark.
+   - Open the TSV **preview** of your vocabulary (see the table above) and confirm that your new names are present.
+
+   > [!WARNING]
+   > If a name already exists in the vocabulary (duplicate), the action fails with an error. Remove or correct the duplicate in your Excel file and upload it again.
+
+5. **Refresh** the Power Query in your lab file to import the latest naming conventions. Ready for use!
 
    ![Refresh the Power Query](docs/refresh_query.png)
 
